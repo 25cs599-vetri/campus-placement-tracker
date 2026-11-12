@@ -1,0 +1,245 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Placement Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <h2>PlaceTrack</h2>
+
+        <ul>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#preparation">My Preparation</a></li>
+           <li><a href="#applications">Applications</a></li>
+            <li><a href="#profile">Profile</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Dashboard -->
+    <main id="dashboard" class="dashboard">
+
+        <h1>Welcome Back!</h1>
+        <p>Track your placement preparation in one place.</p>
+
+        <!-- Statistics Cards -->
+        <section class="stats">
+
+            <div class="card">
+                <h3 id="problemCount">0</h3>
+                <p>Problems Solved</p>
+            </div>
+
+            <div class="card">
+                <h3 id="applicationCount">0</h3>
+                <p>Applications</p>
+            </div>
+
+            <div class="card">
+                <h3 id="interviewCount">0</h3>
+                <p>Interviews</p>
+            </div>
+
+            <div class="card">
+    <h3 id="completedTaskCount">0</h3>
+    <p>Completed Tasks</p>
+</div>
+
+        </section>
+
+       
+<section id="preparation" class="preparation">
+
+    <h2>My Preparation</h2>
+
+    <p>Manage your daily learning goals.</p>
+
+    <div class="task-input">
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter your preparation task"
+        >
+
+        <button id="addTaskButton">Add Task</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+</section>
+
+<!-- DSA Progress Tracker -->
+<section class="preparation">
+
+    <h2>DSA Progress Tracker</h2>
+
+    <p>Track your coding practice and problems solved.</p>
+    <div class="task-input">
+
+    <input
+        type="text"
+        id="problemInput"
+        placeholder="Enter problem name"
+    >
+
+    <button id="addProblemButton">Add Problem</button>
+
+</div>
+<div class="task-input">
+
+    <select id="problemTopic">
+        <option value="">Select Topic</option>
+        <option value="Arrays">Arrays</option>
+        <option value="Strings">Strings</option>
+        <option value="Linked Lists">Linked Lists</option>
+        <option value="Stacks">Stacks</option>
+        <option value="Queues">Queues</option>
+        <option value="Trees">Trees</option>
+        <option value="Graphs">Graphs</option>
+        <option value="Dynamic Programming">Dynamic Programming</option>
+    </select>
+
+</div>
+<div class="task-input">
+
+    <select id="problemDifficulty">
+        <option value="">Select Difficulty</option>
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+    </select>
+
+</div>
+<!-- Solved Problems List -->
+<ul id="problemList"></ul>
+</section>
+<!-- Placement Applications Tracker -->
+<section id="applications" class="preparation">
+
+    <h2>My Applications</h2>
+
+    <p>Track the companies and jobs you apply for.</p>
+    <div class="task-input">
+
+    <input
+        type="text"
+        id="companyInput"
+        placeholder="Enter company name"
+    >
+
+</div>
+<div class="task-input">
+
+    <input
+        type="text"
+        id="roleInput"
+        placeholder="Enter job role"
+    >
+
+</div>
+<div class="task-input">
+
+    <input
+        type="date"
+        id="applicationDate"
+    >
+
+</div>
+<div class="task-input">
+
+    <select id="applicationStatus">
+
+        <option value="">Select Status</option>
+        <option value="Applied">Applied</option>
+        <option value="Assessment">Assessment</option>
+        <option value="Interview">Interview</option>
+        <option value="Selected">Selected</option>
+        <option value="Rejected">Rejected</option>
+
+    </select>
+
+</div>
+<div class="task-input">
+
+    <button id="addApplicationButton">
+        Add Application
+    </button>
+
+</div>
+<ul id="applicationList"></ul>
+</section>
+<!-- Student Profile Section -->
+<section id="profile" class="preparation">
+
+    <h2>My Profile</h2>
+
+    <p>Manage your academic and career details.</p>
+<div class="task-input">
+
+    <input
+        type="text"
+        id="studentName"
+        placeholder="Enter your full name"
+    >
+
+</div>
+<div class="task-input">
+
+    <input
+        type="text"
+        id="studentDegree"
+        placeholder="Enter your degree (e.g. B.E CSE)"
+    >
+
+</div>
+<div class="task-input">
+
+    <input
+        type="text"
+        id="collegeName"
+        placeholder="Enter your college name"
+    >
+
+</div>
+<div class="task-input">
+
+    <input
+        type="text"
+        id="studentSkills"
+        placeholder="Enter your skills (e.g. Java, Python, HTML)"
+    >
+
+</div>
+<div class="task-input">
+
+    <textarea
+        id="careerGoal"
+        placeholder="Describe your career goal"
+        rows="3"
+    ></textarea>
+
+</div>
+<div class="task-input">
+
+    <button id="saveProfileButton">Save Profile</button>
+
+</div>
+<div id="profileDisplay"></div>
+</section>
+    </main>
+<!-- Footer -->
+<footer class="footer">
+
+    <p>© 2026 PlaceTrack. Built for aspiring professionals.</p>
+
+</footer>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
